@@ -47,6 +47,7 @@ dependencies {
     def room_version = "2.2.6"
     def kodein_version = "6.4.0"
     def lifecycle_version = "2.3.0"
+    def arch_version = "2.1.0"
 
     //Room
     implementation "androidx.room:room-runtime:$room_version"
@@ -63,6 +64,8 @@ dependencies {
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    implementation "android.arch.lifecycle:viewmodel:$arch_version"
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     // Lifecycles only (without ViewModel or LiveData)
